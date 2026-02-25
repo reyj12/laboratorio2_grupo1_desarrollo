@@ -1,4 +1,4 @@
-package laboratorio2_grupo1_desarrollo
+package laboratorio2_grupo1_desarrollo;
 
 import java.util.Scanner;
 
