@@ -6,9 +6,9 @@ public class WallBuilder {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        boolean continuar = true;
+        boolean keepGoing = true;
 
-        while (continuar) {
+        while (keepGoing) {
             int width;
             int height;
             char borderChar = '#';
@@ -25,9 +25,9 @@ public class WallBuilder {
             System.out.println("5. Salir");
             System.out.print("Elige una opción: ");
             
-            int opcion = sc.nextInt();
+            int option = sc.nextInt();
 
-            switch (opcion) {
+            switch (option) {
                 case 1: // Básica
                     borderChar = '#';
                     interiorChar = ' ';
@@ -122,10 +122,10 @@ public class WallBuilder {
 
             // === PREGUNTAR SI CONTINUAR ===
             System.out.print("\n¿Desea construir otra muralla? (s/n): ");
-            char respuesta = sc.next().toLowerCase().charAt(0);
+            char answer = sc.next().toLowerCase().charAt(0);
             
-            if (respuesta != 's' && respuesta != 'S') {
-                continuar = false;
+            if (answer != 's') {
+                keepGoing = false;
             }
         }
 
